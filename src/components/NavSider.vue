@@ -13,12 +13,12 @@
           <span slot="title">记事本</span>
         </el-menu-item>
       </router-link>
-      <router-link to="/404">
+      <a href="https://github.com/dutny/PersonalDemo.git" target="_blank">
         <el-menu-item index="3">
           <i class="el-icon-document"></i>
-          <span slot="title">未完成</span>
+          <span slot="title">前往Github源码</span>
         </el-menu-item>
-      </router-link>
+      </a>
       <el-menu-item index="4">
         <i class="el-icon-setting"></i>
         <span slot="title">未完成</span>
@@ -64,24 +64,24 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-  div {
-    margin-top: 0px;
-    position: fixed;
+div {
+  margin-top: 0px;
+  position: fixed;
+  color: #409eff;
+  .el-menu-vertical-demo {
+    background-color: #303133;
     color: #409eff;
-    .el-menu-vertical-demo {
-      background-color: #303133;
-      color: #409eff;
-      .el-menu-item {
-        i {
-          color: #409eff !important;
-        }
-        span {
-          color: #409eff !important;
-        }
+    .el-menu-item {
+      i {
+        color: #409eff !important;
+      }
+      span {
+        color: #409eff !important;
       }
     }
-    el-submenu {
-      background-color: #303133 !important;
-    }
   }
+  el-submenu {
+    background-color: #303133 !important;
+  }
+}
 </style>
